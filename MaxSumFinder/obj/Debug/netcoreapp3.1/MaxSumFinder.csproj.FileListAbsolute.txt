@@ -2,3 +2,9 @@ C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Max
 C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.csprojAssemblyReference.cache
 C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.AssemblyInfoInputs.cache
 C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.AssemblyInfo.cs
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\MaxSumFinder.exe
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.csprojAssemblyReference.cache
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.AssemblyInfoInputs.cache
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.AssemblyInfo.cs
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.csproj.CopyComplete

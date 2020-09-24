@@ -1,32 +1,35 @@
 ﻿using MaxSumFinder.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.IO;
 
 namespace MaxSumFinder
 {
     class Program
     {
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.Add(new ServiceDescriptor(typeof(IInputPromt), new ConsoleInputPromt()));
-            services.Add(new ServiceDescriptor(typeof(IFileReader), new FileReader()));
-            services.Add(new ServiceDescriptor(typeof(IFileProcessor), new FileProcessor()));
-            services.Add(new ServiceDescriptor(typeof(IPrinter), new ConsoleOutput()));
-        }
+
 
 
         static void Main(string[] args)
         {
-            var processor = new FileProcessor();
-            
+            //setup our DI
+            var serviceProvider = new ServiceCollection()
+                .AddSingleton<IInputPromt, ConsoleInputPromt>()
+                .AddSingleton<IFileReader, FileReader>()
+                .AddSingleton<IFileProcessor, FileProcessor>()
+                .BuildServiceProvider();
+
+            var inputPromt = serviceProvider.GetService<IInputPromt>();
+            var fileProcessor = serviceProvider.GetService<IFileProcessor>();
+            var fileReader = serviceProvider.GetService<IFileReader>();
+
+
             if (args[0] is string)
             {
-                var filepath = new Path();
+                fileReader.ReadFile(args[0]);
             }
             else
-            { 
-            
+            {
+                fileReader.ReadFile();
             }
 
             Console.ReadLine();
