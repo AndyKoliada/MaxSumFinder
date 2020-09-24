@@ -5,7 +5,15 @@ namespace MaxSumFinder
 {
     public class ConsoleInputPromt : IInputPromt
     {
+        string filePath;
         public string FilePath { get; set; }
+
+        public ConsoleInputPromt(string filePath)
+        {
+            InputPromt();
+            this.FilePath = filePath;
+        }
+
 
         public void InputPromt()
         {
@@ -14,8 +22,7 @@ namespace MaxSumFinder
             Console.WriteLine(new string('#', 50));
             Console.WriteLine();
             Console.WriteLine("     Please, input path to your text file: ");
-            FilePath = Console.ReadLine();
-            
+            filePath = Console.ReadLine();
         }
     }
 }
