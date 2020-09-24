@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jTnbmuwsZ56UjahnWAGQ9pyi/dciIAdPwyhbBgtb3XqzPTwcQjb5faEKkrZ2Knv0D+pc6bV0Wgijwtp3YRxCPQ==",
+  "dgSpecHash": "FEGEn5VGV/j892cs7bA5s37/co/HW03PcakMuENmaTekghQpC6edlkj1qqrX1fyyGC4qhWtuHZfK84nJXedNtA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Andy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.8\\microsoft.extensions.dependencyinjection.abstractions.3.1.8.nupkg.sha512"
+  ],
   "logs": []
 }
