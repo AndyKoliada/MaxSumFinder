@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MaxSumFinder.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MaxSumFinder
 {
-    class FileProcessor
+    class FileProcessor : IFileProcessor
     {
         void ProcessFile()
         { 
