@@ -6,9 +6,6 @@ namespace MaxSumFinder
 {
     class Program
     {
-
-
-
         static void Main(string[] args)
         {
             //setting up DI (registering services)
@@ -20,18 +17,18 @@ namespace MaxSumFinder
             
             //calling registered services from serviceProvider
             var inputPromt = serviceProvider.GetService<IInputPromt>();
-            var fileProcessor = serviceProvider.GetService<IFileProcessor>();
             var fileReader = serviceProvider.GetService<IFileReader>();
+            var fileProcessor = serviceProvider.GetService<IFileProcessor>();
 
 
-            if (args[0] is string)
+            if (args.Length != 0)
             {
                 fileReader.ReadFile(args[0]);
             }
             else
             {
                 inputPromt.InputPromt();
-                fileReader.ReadFile();
+                fileReader.ReadFile()
             }
 
             fileProcessor.ProcessFile();
