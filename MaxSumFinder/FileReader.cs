@@ -1,11 +1,14 @@
 ﻿using MaxSumFinder.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace MaxSumFinder
 {
     class FileReader : IFileReader
     {
+        public List<string> TextObject;
+
         void ReadFile(string filePath)
         {
             try
@@ -19,7 +22,8 @@ namespace MaxSumFinder
                     // the file is reached.
                     while ((line = sr.ReadLine()) != null)
                     {
-                        Console.WriteLine(line);
+                        //Console.WriteLine(line);
+                        TextObject.Add(line);
                     }
                 }
             }
