@@ -13,12 +13,14 @@ namespace MaxSumFinder
                 .AddSingleton<IInputPromt, ConsoleInputPromt>()
                 .AddSingleton<IFileReader, FileReader>()
                 .AddSingleton<IFileProcessor, FileProcessor>()
+                .AddSingleton<IPrinter, ConsoleOutput>()
                 .BuildServiceProvider();
             
             //calling registered services from serviceProvider
             var inputPromt = serviceProvider.GetService<IInputPromt>();
             var fileReader = serviceProvider.GetService<IFileReader>();
             var fileProcessor = serviceProvider.GetService<IFileProcessor>();
+            var consoleOutput = serviceProvider.GetService<IPrinter>();
 
             if (args.Length != 0)
             {
@@ -30,7 +32,8 @@ namespace MaxSumFinder
                 fileReader.ReadFile(inputPromt.FilePath);
             }
 
-            fileProcessor.ProcessFile();
+            //fileProcessor.ProcessFile(fileReader.TextObject);
+            c//onsoleOutput.Print();
             Console.ReadLine();
         }
     }

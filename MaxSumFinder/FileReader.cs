@@ -7,7 +7,7 @@ namespace MaxSumFinder
 {
     class FileReader : IFileReader
     {
-        public List<string> TextObject;
+        public List<string> TextObject { get; set; }
 
         void ReadFile(string filePath)
         {
@@ -15,14 +15,14 @@ namespace MaxSumFinder
             {
                 // Create an instance of StreamReader to read from a file.
                 // The using statement also closes the StreamReader.
-                using (StreamReader sr = new StreamReader(filePath))
+                using (StreamReader sr = new StreamReader("TestFile.txt"))
                 {
                     string line;
                     // Read and display lines from the file until the end of
                     // the file is reached.
                     while ((line = sr.ReadLine()) != null)
                     {
-                        //Console.WriteLine(line);
+                        Console.WriteLine(line);
                         TextObject.Add(line);
                     }
                 }
