@@ -33,7 +33,7 @@ namespace MaxSumFinder
             }
 
             //fileProcessor.ProcessFile(fileReader.TextObject);
-            c//onsoleOutput.Print();
+            //onsoleOutput.Print();
             Console.ReadLine();
         }
     }
