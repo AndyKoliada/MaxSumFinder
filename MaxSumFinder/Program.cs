@@ -1,6 +1,7 @@
 ﻿using MaxSumFinder.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Collections.Generic;
 
 namespace MaxSumFinder
 {
@@ -19,9 +20,12 @@ namespace MaxSumFinder
             //calling registered services from serviceProvider
             var inputPromt = serviceProvider.GetService<IInputPromt>();
             var fileReader = serviceProvider.GetService<IFileReader>();
-            var fileProcessor = serviceProvider.GetService<IFileProcessor>();
-            var consoleOutput = serviceProvider.GetService<IPrinter>();
+            //var fileProcessor = serviceProvider.GetService<IFileProcessor>();
+            //var consoleOutput = serviceProvider.GetService<IPrinter>();
 
+
+
+            //fileReader.ReadFile("C:\\Users\Andy\1.txt");
             if (args.Length != 0)
             {
                 fileReader.ReadFile(args[0]);
@@ -31,9 +35,10 @@ namespace MaxSumFinder
                 inputPromt.InputPromt();
                 fileReader.ReadFile(inputPromt.FilePath);
             }
-
+            
             //fileProcessor.ProcessFile(fileReader.TextObject);
-            //onsoleOutput.Print();
+            //consoleOutput.Print(fileProcessor.MaxSumLine);
+            //consoleOutput.Print(fileProcessor.BadLines);
             Console.ReadLine();
         }
     }

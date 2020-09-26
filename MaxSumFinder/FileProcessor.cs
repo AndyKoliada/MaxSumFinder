@@ -7,15 +7,20 @@ namespace MaxSumFinder
 {
     public class FileProcessor : IFileProcessor
     {
-        public double MaxSumLineCount { get; set; }
+        public int MaxSumLine { get; set; }
+        public double MaxLineSum { get; set; }
         public List<double> LineList { get; set; }
         public List<int> BadLines { get; set; }
+
+        double currentSumLine;
         string[] tryLine;
         bool lineIsValid = true;
-        int maxSumLine;
 
         public void ProcessFile(List<string> textObject)
         {
+            LineList = new List<double>();
+            BadLines = new List<int>();
+
             for(int i = 0; i < textObject.Count; i++)
             {
                 lineIsValid = true;
@@ -29,6 +34,10 @@ namespace MaxSumFinder
                         if (Double.TryParse(num, out validNumber))
                         {
                             LineList.Add(validNumber);
+                            if (currentSumLine < LineList.Sum())
+                            {
+                                currentSumLine += LineList.Sum();
+                            }
                         }
                         else
                         {
@@ -38,7 +47,7 @@ namespace MaxSumFinder
                     }
                 }
 
-                MaxSumLineCount += LineList.Sum();
+                MaxLineSum += LineList.Sum();
 
 
                 
