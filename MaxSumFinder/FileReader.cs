@@ -21,23 +21,21 @@ namespace MaxSumFinder
                 //Continue to read until you reach end of file
                 while (line != null)
                 {
-                    //write the lie to console window
+                    //write the line to console window
                     Console.WriteLine(line);
+                    TextObject.Add(line);
                     //Read the next line
                     line = sr.ReadLine();
                 }
                 //close the file
                 sr.Close();
-                Console.ReadLine();
+                //Console.ReadLine();
             }
             catch (Exception e)
             {
                 Console.WriteLine("Exception: " + e.Message);
             }
-            finally
-            {
-                Console.WriteLine("Executing finally block.");
-            }
+
         }
         
     }

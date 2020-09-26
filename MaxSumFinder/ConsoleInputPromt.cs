@@ -5,7 +5,7 @@ namespace MaxSumFinder
 {
     public class ConsoleInputPromt : IInputPromt
     {
-        public string FilePath { get; set; } = "C:\\Users\Andy\1.txt";
+        public string FilePath { get; set; }
 
         public string InputPromt()
         {

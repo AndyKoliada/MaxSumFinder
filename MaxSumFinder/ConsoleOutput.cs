@@ -6,7 +6,7 @@ namespace MaxSumFinder
     public class ConsoleOutput : IPrinter
     {
         public void Print(int maxSumLineNum)
-        {
+        {   
             System.Console.Write("Line with the max sum: ");
             System.Console.WriteLine(maxSumLineNum);
         }

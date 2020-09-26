@@ -26,7 +26,8 @@ namespace MaxSumFinder
                 lineIsValid = true;
                 double validNumber;
                 tryLine = textObject[i].Split(',');
-                
+
+
                 while (lineIsValid)
                 {
                     foreach (string num in tryLine)
@@ -34,6 +35,7 @@ namespace MaxSumFinder
                         if (Double.TryParse(num, out validNumber))
                         {
                             LineList.Add(validNumber);
+                            Console.WriteLine(validNumber);
                             if (currentSumLine < LineList.Sum())
                             {
                                 currentSumLine += LineList.Sum();
@@ -41,16 +43,16 @@ namespace MaxSumFinder
                         }
                         else
                         {
-                            BadLines.Add(i);
+                            BadLines.Add(i+1);
                             lineIsValid = false;
                         }
+                        
+                        lineIsValid = false;
                     }
                 }
 
                 MaxLineSum += LineList.Sum();
 
-
-                
             }
         }
     }
