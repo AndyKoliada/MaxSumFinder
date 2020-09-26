@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace MaxSumFinder
 {
@@ -9,50 +10,54 @@ namespace MaxSumFinder
     {
         public int MaxSumLine { get; set; }
         public double MaxLineSum { get; set; }
-        public List<double> LineList { get; set; }
-        public List<int> BadLines { get; set; }
+        public List<double> LineList { get; set; } = new List<double>();
+        public List<int> BadLines { get; set; } = new List<int>();
 
-        double currentSumLine = 0.0;
-        string[] tryLine;
-        bool lineIsValid = true;
+        Dictionary<int, double> processedText =
+    new Dictionary<int, double>();
+
+        //double currentSumLine = 0.0;
+        
+        //bool lineIsValid = true;
 
         public void ProcessFile(List<string> textObject)
         {
-            LineList = new List<double>();
-            BadLines = new List<int>();
-
-            for(int i = 0; i < textObject.Count; i++)
+            for (int i = 0; i < textObject.Count; i++)
             {
-                lineIsValid = true;
-                double validNumber;
+                string[] tryLine;
                 tryLine = textObject[i].Split(',');
+                
+                double validDouble;
+                int badLineBuffer = 0;
 
-
-                while (lineIsValid)
+                foreach (var item in tryLine)
                 {
-                    foreach (string num in tryLine)
+                    
+                    if (Double.TryParse(item, out validDouble))
                     {
-                        if (Double.TryParse(num, out validNumber))
-                        {
-                            LineList.Add(validNumber);
-
-                            if (currentSumLine < LineList.Sum())
-                            {
-                                currentSumLine += LineList.Sum();
-                            }
-                        }
-                        else
-                        {
-                            BadLines.Add(i+1);
-                            lineIsValid = false;
-                        }
-                        
-                        lineIsValid = false;
+                        LineList.Add(validDouble);
+                    }
+                    else
+                    {
+                        badLineBuffer = i;
                     }
                 }
-                lineIsValid = false;
 
+                BadLines.Add(badLineBuffer);
+                processedText.Add(i, LineList.Sum());
 
+            }
+
+            foreach (var item in processedText)
+            {
+                if (item.Value < 0)
+                {
+                    BadLines.Add(item.Key);
+                }
+                else
+                {
+                    MaxSumLine = item.Key;
+                }
             }
         }
     }

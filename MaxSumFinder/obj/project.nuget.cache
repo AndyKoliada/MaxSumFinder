@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CbxpmGLrZJBv53XPM9zKDxxUY+URtSk26I9l0BRtyl2+jtoXtnGilbLOz5SDaTzlfmKoejfQ/kp68O5iCA8WKw==",
+  "dgSpecHash": "m1Ss81c/QJCUl0pRSGFB+mE0tqCtAG94xlj9j01tUmxe8TPLM2VQC3RNyrp9VSBd5xmvR9m2qsa0l+fn1whlOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj",
+  "projectFilePath": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Andy\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.8\\microsoft.extensions.dependencyinjection.3.1.8.nupkg.sha512",
-    "C:\\Users\\Andy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.8\\microsoft.extensions.dependencyinjection.abstractions.3.1.8.nupkg.sha512"
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.8\\microsoft.extensions.dependencyinjection.3.1.8.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.8\\microsoft.extensions.dependencyinjection.abstractions.3.1.8.nupkg.sha512"
   ],
   "logs": []
 }

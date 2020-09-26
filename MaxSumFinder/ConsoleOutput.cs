@@ -18,6 +18,7 @@ namespace MaxSumFinder
             {
                 System.Console.Write(BadLines[i]);
                 if (i != BadLines.Count) System.Console.Write(", ");
+                System.Console.WriteLine();
             }
 
         }

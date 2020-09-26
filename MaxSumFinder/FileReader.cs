@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace MaxSumFinder
 {
@@ -29,7 +28,7 @@ namespace MaxSumFinder
                 }
                 //close the file
                 sr.Close();
-                //Console.ReadLine();
+                Console.WriteLine();
             }
             catch (Exception e)
             {
