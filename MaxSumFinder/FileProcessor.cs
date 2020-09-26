@@ -12,7 +12,7 @@ namespace MaxSumFinder
         public List<double> LineList { get; set; }
         public List<int> BadLines { get; set; }
 
-        double currentSumLine;
+        double currentSumLine = 0.0;
         string[] tryLine;
         bool lineIsValid = true;
 
@@ -35,7 +35,7 @@ namespace MaxSumFinder
                         if (Double.TryParse(num, out validNumber))
                         {
                             LineList.Add(validNumber);
-                            Console.WriteLine(validNumber);
+
                             if (currentSumLine < LineList.Sum())
                             {
                                 currentSumLine += LineList.Sum();
@@ -50,8 +50,8 @@ namespace MaxSumFinder
                         lineIsValid = false;
                     }
                 }
+                lineIsValid = false;
 
-                MaxLineSum += LineList.Sum();
 
             }
         }
