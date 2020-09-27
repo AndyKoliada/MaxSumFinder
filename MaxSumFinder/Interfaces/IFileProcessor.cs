@@ -10,8 +10,8 @@ namespace MaxSumFinder.Interfaces
         public List<int> BadLines { get; set; }
 
         public void ProcessFile(List<string> textObject)
-        { 
-        
+        {
+
         }
     }
 }

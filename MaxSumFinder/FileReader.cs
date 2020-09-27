@@ -21,7 +21,7 @@ namespace MaxSumFinder
                 while (line != null)
                 {
                     //write the line to console window
-                    Console.WriteLine(line);
+                    //Console.WriteLine(line);
                     TextObject.Add(line);
                     //Read the next line
                     line = sr.ReadLine();
@@ -36,6 +36,6 @@ namespace MaxSumFinder
             }
 
         }
-        
+
     }
 }

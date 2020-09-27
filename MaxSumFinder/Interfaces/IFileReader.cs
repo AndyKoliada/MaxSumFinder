@@ -7,8 +7,8 @@ namespace MaxSumFinder.Interfaces
         public List<string> TextObject { get; set; }
 
         public void ReadFile(string filePath)
-        { 
-        
+        {
+
         }
     }
 }
