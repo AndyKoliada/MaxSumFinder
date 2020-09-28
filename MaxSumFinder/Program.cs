@@ -1,40 +1,39 @@
 ﻿using MaxSumFinder.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace MaxSumFinder
 {
     class Program
     {
+        private static IServiceProvider serviceProvider;
+
         static void Main(string[] args)
         {
-            //setting up DI (registering services)
-            var serviceProvider = new ServiceCollection()
-                .AddSingleton<IInputPromt, ConsoleInputPromt>()
-                .AddSingleton<IFileReader, FileReader>()
-                .AddSingleton<IFileProcessor, FileProcessor>()
-                .AddSingleton<IPrinter, ConsoleOutput>()
-                .BuildServiceProvider();
-
-            //calling registered services from serviceProvider
-            var inputPromt = serviceProvider.GetService<IInputPromt>();
-            var fileReader = serviceProvider.GetService<IFileReader>();
-            var fileProcessor = serviceProvider.GetService<IFileProcessor>();
-            var consoleOutput = serviceProvider.GetService<IPrinter>();
-
+            RegisterServices();
+            var finder = new MaxSumFinder(serviceProvider);
             if (args.Length != 0)
             {
-                fileReader.ReadFile(args[0]);
+
+                finder.Run(args);
             }
             else
             {
-                inputPromt.InputPromt();
-                fileReader.ReadFile(inputPromt.FilePath);
+                finder.Run();
             }
 
-            fileProcessor.ProcessFile(fileReader.TextObject);
-            consoleOutput.Print(fileProcessor.MaxSumLine);
-            consoleOutput.Print(fileProcessor.BadLines);
 
+        }
+
+        private static void RegisterServices()
+        {
+            //setting up DI (registering services)
+            var collection = new ServiceCollection()
+                .AddSingleton<IInputPromt, ConsoleInputPromt>()
+                .AddSingleton<IFileReader, FileReader>()
+                .AddSingleton<IFileProcessor, FileProcessor>()
+                .AddSingleton<IPrinter, ConsoleOutput>();
+            serviceProvider = collection.BuildServiceProvider();
         }
     }
 }
