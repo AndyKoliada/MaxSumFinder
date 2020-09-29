@@ -28,5 +28,8 @@ C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\Max
 C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.genruntimeconfig.cache
 C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.csproj.CoreCompileInputs.cache
 C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.csproj.CopyComplete
+C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
