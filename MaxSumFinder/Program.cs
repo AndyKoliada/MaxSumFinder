@@ -1,72 +1,32 @@
 ﻿using MaxSumFinder.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace MaxSumFinder
 {
     class Program
     {
         static void Main(string[] args)
-        {
-            var services = ConfigureServices();
-
-            var serviceProvider = services.BuildServiceProvider();
-
-            // calls the Run method in App, which is replacing Main
-            serviceProvider.GetService<App>().Run();
+        {   
+            using (var serviceProvider = SetupDI())
+            {
+                serviceProvider.GetService<App>().Run(args);
+            }
         }
 
-        private static IServiceCollection ConfigureServices()
+        private static ServiceProvider SetupDI()
         {
-            IServiceCollection services = new ServiceCollection();
+            var services = new ServiceCollection();
 
-            var config = LoadConfiguration();
-            services.AddSingleton(config);
+            services.AddTransient<IFileReader, FileReader>();
+            services.AddTransient<IInputPromt, ConsoleInputPromt>();
+            services.AddTransient<IFileProcessor, FileProcessor>();
+            services.AddTransient<IPrinter, ConsoleOutput>();
 
-            // required to run the application
             services.AddTransient<App>();
 
-            return services;
+            return services.BuildServiceProvider();
         }
-
-        public static IConfiguration LoadConfiguration()
-        {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-
-            return builder.Build();
-        }
-    //    private static IServiceProvider serviceProvider;
-
-    //    static void Main(string[] args)
-    //    {
-    //        RegisterServices();
-    //        var finder = new MaxSumFinder(serviceProvider);
-    //        if (args.Length != 0)
-    //        {
-
-    //            finder.Run(args);
-    //        }
-    //        else
-    //        {
-    //            finder.Run();
-    //        }
-
-
-    //    }
-
-    //    private static void RegisterServices()
-    //    {
-    //        //setting up DI (registering services)
-    //        var collection = new ServiceCollection()
-    //            .AddSingleton<IInputPromt, ConsoleInputPromt>()
-    //            .AddSingleton<IFileReader, FileReader>()
-    //            .AddSingleton<IFileProcessor, FileProcessor>()
-    //            .AddSingleton<IPrinter, ConsoleOutput>();
-    //        serviceProvider = collection.BuildServiceProvider();
-    //    }
-    //}
+    }
 }
 
 //Предоставляется файл (путь к файлу необходимо или запросить у пользователя при старте программы,

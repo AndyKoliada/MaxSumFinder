@@ -739,6 +739,15 @@
           }
         }
       },
+      "Serilog/2.10.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Serilog.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1768,7 +1777,8 @@
           "Microsoft.Extensions.Configuration": "3.1.8",
           "Microsoft.Extensions.Configuration.Binder": "3.1.8",
           "Microsoft.Extensions.Configuration.Json": "3.1.8",
-          "Microsoft.Extensions.DependencyInjection": "3.1.8"
+          "Microsoft.Extensions.DependencyInjection": "3.1.8",
+          "Serilog": "2.10.0"
         },
         "compile": {
           "bin/placeholder/MaxSumFinder.dll": {}
@@ -2834,6 +2844,30 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "Serilog/2.10.0": {
+      "sha512": "+QX0hmf37a0/OZLxM3wL7V6/ADvC1XihXN4Kq/p6d8lCPfgkRdiuhbWlMaFjR9Av0dy5F0+MBeDmDdRZN/YwQA==",
+      "type": "package",
+      "path": "serilog/2.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net45/Serilog.dll",
+        "lib/net45/Serilog.xml",
+        "lib/net46/Serilog.dll",
+        "lib/net46/Serilog.xml",
+        "lib/netstandard1.0/Serilog.dll",
+        "lib/netstandard1.0/Serilog.xml",
+        "lib/netstandard1.3/Serilog.dll",
+        "lib/netstandard1.3/Serilog.xml",
+        "lib/netstandard2.0/Serilog.dll",
+        "lib/netstandard2.0/Serilog.xml",
+        "lib/netstandard2.1/Serilog.dll",
+        "lib/netstandard2.1/Serilog.xml",
+        "serilog.2.10.0.nupkg.sha512",
+        "serilog.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -6040,23 +6074,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andy\\.nuget\\packages\\": {},
+    "C:\\Users\\Z\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj",
+      "projectUniqueName": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj",
       "projectName": "MaxSumFinderTests",
-      "projectPath": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj",
-      "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinderTests\\obj\\",
+      "projectPath": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj",
+      "packagesPath": "C:\\Users\\Z\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinderTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Z\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -6070,8 +6104,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj": {
-              "projectPath": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj"
+            "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj": {
+              "projectPath": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj"
             }
           }
         }

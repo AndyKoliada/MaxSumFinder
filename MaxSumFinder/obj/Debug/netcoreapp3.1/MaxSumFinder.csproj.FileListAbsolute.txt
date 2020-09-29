@@ -14,7 +14,6 @@ C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\MaxSum
 C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\MaxSumFinder.dll
 C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\MaxSumFinder.pdb
 C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.csproj.CoreCompileInputs.cache
 C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.dll
 C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.pdb
 C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.genruntimeconfig.cache
@@ -33,3 +32,14 @@ C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Mic
 C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\Andy\source\repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinder\obj\Debug\netcoreapp3.1\MaxSumFinder.csproj.CoreCompileInputs.cache

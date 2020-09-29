@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxSumFinder", "MaxSumFinder.csproj", "{E4177129-65BB-49C2-A2A4-667B771EA7BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSumFinderTests", "..\MaxSumFinderTests\MaxSumFinderTests.csproj", "{DCF345AA-3308-4727-AA22-8FEF2455C4F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxSumFinderTests", "..\MaxSumFinderTests\MaxSumFinderTests.csproj", "{DCF345AA-3308-4727-AA22-8FEF2455C4F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,12 +13,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E4177129-65BB-49C2-A2A4-667B771EA7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E4177129-65BB-49C2-A2A4-667B771EA7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4177129-65BB-49C2-A2A4-667B771EA7BE}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{E4177129-65BB-49C2-A2A4-667B771EA7BE}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{E4177129-65BB-49C2-A2A4-667B771EA7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4177129-65BB-49C2-A2A4-667B771EA7BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DCF345AA-3308-4727-AA22-8FEF2455C4F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCF345AA-3308-4727-AA22-8FEF2455C4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF345AA-3308-4727-AA22-8FEF2455C4F3}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF345AA-3308-4727-AA22-8FEF2455C4F3}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{DCF345AA-3308-4727-AA22-8FEF2455C4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCF345AA-3308-4727-AA22-8FEF2455C4F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

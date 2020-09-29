@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj": {}
+    "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj": {
+    "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj",
+        "projectUniqueName": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj",
         "projectName": "MaxSumFinderTests",
-        "projectPath": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj",
-        "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinderTests\\obj\\",
+        "projectPath": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinderTests\\MaxSumFinderTests.csproj",
+        "packagesPath": "C:\\Users\\Z\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinderTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Z\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj": {
-                "projectPath": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj"
+              "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj": {
+                "projectPath": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj"
               }
             }
           }
@@ -82,20 +82,20 @@
         }
       }
     },
-    "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj": {
+    "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj",
+        "projectUniqueName": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj",
         "projectName": "MaxSumFinder",
-        "projectPath": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj",
-        "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andy\\source\\repos\\maxsumfinder\\MaxSumFinder\\obj\\",
+        "projectPath": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinder\\MaxSumFinder.csproj",
+        "packagesPath": "C:\\Users\\Z\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Z\\Source\\Repos\\maxsumfinder\\MaxSumFinder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Z\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -135,6 +135,10 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[3.1.8, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
             }
           },
           "imports": [
