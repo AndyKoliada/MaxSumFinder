@@ -1,39 +1,30 @@
 ﻿using MaxSumFinder.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace MaxSumFinder
 {
     class Program
     {
-        private static IServiceProvider serviceProvider;
-
         static void Main(string[] args)
-        {
-            RegisterServices();
-            var finder = new MaxSumFinder(serviceProvider);
-            if (args.Length != 0)
+        {   
+            using (var serviceProvider = SetupDI())
             {
-
-                finder.Run(args);
+                serviceProvider.GetService<App>().Run(args);
             }
-            else
-            {
-                finder.Run();
-            }
-
-
         }
 
-        private static void RegisterServices()
+        private static ServiceProvider SetupDI()
         {
-            //setting up DI (registering services)
-            var collection = new ServiceCollection()
-                .AddSingleton<IInputPromt, ConsoleInputPromt>()
-                .AddSingleton<IFileReader, FileReader>()
-                .AddSingleton<IFileProcessor, FileProcessor>()
-                .AddSingleton<IPrinter, ConsoleOutput>();
-            serviceProvider = collection.BuildServiceProvider();
+            var services = new ServiceCollection();
+
+            services.AddTransient<IFileReader, FileReader>();
+            services.AddTransient<IInputPromt, ConsoleInputPromt>();
+            services.AddTransient<IFileProcessor, FileProcessor>();
+            services.AddTransient<IPrinter, ConsoleOutput>();
+
+            services.AddTransient<App>();
+
+            return services.BuildServiceProvider();
         }
     }
 }

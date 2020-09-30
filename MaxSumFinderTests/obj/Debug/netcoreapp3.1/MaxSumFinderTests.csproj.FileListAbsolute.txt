@@ -97,3 +97,14 @@ C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\obj\Debug\netcoreapp3.1\M
 C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\obj\Debug\netcoreapp3.1\MaxSumFinderTests.dll
 C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\obj\Debug\netcoreapp3.1\MaxSumFinderTests.pdb
 C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\obj\Debug\netcoreapp3.1\MaxSumFinderTests.genruntimeconfig.cache
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Z\Source\Repos\maxsumfinder\MaxSumFinderTests\bin\Debug\netcoreapp3.1\Serilog.dll

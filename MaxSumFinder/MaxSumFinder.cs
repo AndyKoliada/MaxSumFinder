@@ -6,10 +6,10 @@ namespace MaxSumFinder
 {
     public class MaxSumFinder
     {
-        IInputPromt inputPromt;
-        IFileReader fileReader;
-        IFileProcessor fileProcessor;
-        IPrinter printer;
+        readonly IInputPromt inputPromt;
+        readonly IFileReader fileReader;
+        readonly IFileProcessor fileProcessor;
+        readonly IPrinter printer;
 
 
         public MaxSumFinder(IServiceProvider serviceProvider)
